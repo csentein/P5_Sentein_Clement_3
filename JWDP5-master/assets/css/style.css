@@ -1,0 +1,387 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------------------------------
+
+Projet 5 - Clément Sentein
+
+-----------------------------------------------------------------------------------
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+main {
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    font-family: Arial;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+}
+
+.headerlogo {
+    justify-content: left;
+    height: 80px;
+}
+
+.navlink_1 {
+    color: #D2691E;
+    margin: 0px 10px;
+}
+
+.navcart {
+    color: #D2691E;
+}
+
+nav {
+    font-size: 18px;
+}
+
+section {
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    width: 80%;
+}
+
+.sectioncamera {
+    border: 1px solid grey;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: 300px;
+    min-height: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin-top: 40px;
+}
+
+/*
+.img_product {
+    /*  width: 300px;
+    height: 200px;
+    overflow: hidden;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: relative;
+}
+*/
+
+.img_product {
+    height: 200px;
+    background-position: center;
+    background-size: contain;
+    transition-duration: 400ms;
+}
+
+.img_product_1 {
+    background-image: url(../../images/vcam_1.jpg);
+}
+
+.img_product_2 {
+    background-image: url(../../images/vcam_2.jpg);
+}
+
+.img_product_3 {
+    background-image: url(../../images/vcam_3.jpg);
+}
+
+.img_product_4 {
+    background-image: url(../../images/vcam_4.jpg);
+}
+
+.img_product_5 {
+    background-image: url(../../images/vcam_5.jpg);
+}
+
+.title_product {
+    margin-top: 6px;
+    padding: 5px 20px 0px 20px;
+}
+
+.price_product {
+    margin-top: -5px;
+    padding: 0px 20px 10px 20px;
+    font-size: 15px;
+}
+
+.detail_product {
+    color: #D2691E;
+    justify-content: center;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    padding-bottom: 10px;
+    font-size: 15px;
+    transition-duration: 200ms;
+}
+
+.sectioncamera_container {
+    margin: 16px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    position: relative;
+}
+
+.sectioncamera:hover .img_product {
+    transform: scale(1.1);
+}
+
+.sectioncamera:hover .detail_product {
+    color: #E88C15
+}
+
+.background-color {
+    background-color: #fff;
+    overflow: hidden;
+    z-index: 19;
+    color: black;
+    height: 100px;
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    background-color: #222222;
+    margin-bottom: -100px;
+}
+
+.footerlink {
+    margin: 0px 20px;
+    color: #fff;
+    font-family: Poppins, sans-serif;
+    font-size: 14px !important;
+    font-weight: 400;
+}
+
+.product {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.img_product_two {
+    height: 270px;
+}
+
+.desc_product {
+    padding: 10px;
+    width: 570px;
+    position: relative;
+}
+
+.p_product {
+    color: grey;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px;
+    margin-top: 16px;
+}
+
+.selectorname {
+    margin-top: 20px;
+    margin-bottom: 12px;
+    margin-left: 10px;
+}
+
+.cameraselector {
+    width: 550px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    height: 25px;
+    border: 1px solid grey;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
+
+.title_product_2 {
+    margin: 0px 8px;
+}
+
+.price_product_2 {
+    margin: 16px 10px 24px 10px;
+}
+
+.button_product {
+    background-color: orange;
+    border-radius: 6px;
+    padding: 10px 16px;
+    color: black;
+    transition-duration: 200ms;
+    position: absolute;
+    bottom: 0;
+    margin: 14px;
+}
+
+.button_product:hover {
+    background-color: #D2691E;
+}
